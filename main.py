@@ -14,7 +14,7 @@ from bardapi import Bard
 # df["text"] = df["text"].astype(str)
 # full_df.head()
 
-with open('twcs_processed.json') as f:
+with open('twitter_data/twcs_processed.json') as f:
     data = json.load(f)
 
 record = data[0]
