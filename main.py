@@ -7,7 +7,7 @@ import string
 pd.options.mode.chained_assignment = None
 from bardapi import Bard
 
-with open('twitter_data/twcs_processed.json') as f:
+with open('twitter_data/twcs_small.json') as f:
     data = json.load(f)
 
 record = data[0]
