@@ -1,18 +1,11 @@
 import os
 import json
-import numpy as np
 import pandas as pd
 import re
-# import nltk
-# import spacy
+
 import string
 pd.options.mode.chained_assignment = None
 from bardapi import Bard
-
-# full_df = pd.read_csv("twcs.csv")
-# df = full_df[["text"]]
-# df["text"] = df["text"].astype(str)
-# full_df.head()
 
 with open('twitter_data/twcs_processed.json') as f:
     data = json.load(f)
