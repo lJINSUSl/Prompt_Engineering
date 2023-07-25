@@ -1,1 +1,1 @@
-from bardapi import Bard
+bardapi
