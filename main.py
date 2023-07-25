@@ -5,7 +5,7 @@ import re
 
 import string
 pd.options.mode.chained_assignment = None
-from bardapi import Bard
+import bardapi
 
 with open('twitter_data/twcs_small.json') as f:
     data = json.load(f)
@@ -16,4 +16,4 @@ txt = f"Here I give you json file. It contains 'name of the company', 'answer', 
 
 os.environ['_BARD_API_KEY'] = 'YQh70kNxjPxZLaaftSj-8bAc4K3JTxG7SSAK3akGaCEi9oLGAfpXx8CGHxgEAJ9qXWUoOQ.'
 
-print(Bard().get_answer(f'{txt}')['content'])
+print(bardapi.Bard().get_answer(f'{txt}')['content'])
